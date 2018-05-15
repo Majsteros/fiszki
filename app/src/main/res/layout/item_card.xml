@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="@dimen/margin_side">
+
+    <TextView
+        android:id="@+id/text_card_item"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_side"
+        android:text="Title"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        app:layout_constraintEnd_toStartOf="@+id/action_card_item_modify"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageButton
+        android:id="@+id/action_card_item_modify"
+        android:layout_width="36dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_large_side"
+        android:background="@null"
+        android:contentDescription="Modify"
+        android:src="@drawable/ic_mode_edit_black_36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/text_card_item"
+        app:layout_constraintEnd_toStartOf="@+id/action_card_item_delete"
+        app:layout_constraintTop_toTopOf="@+id/text_card_item" />
+
+    <ImageButton
+        android:id="@+id/action_card_item_delete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="@dimen/margin_large_side"
+        android:background="@null"
+        android:contentDescription="Delete"
+        android:src="@drawable/ic_delete_black_36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/action_card_item_modify"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/action_card_item_modify" />
+
+    <View
+        android:id="@+id/shape_line"
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:layout_marginEnd="@dimen/margin_side"
+        android:layout_marginStart="@dimen/margin_side"
+        android:layout_marginTop="@dimen/margin_large_side"
+        android:background="@drawable/bottom_line"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/text_card_item" />
+
+</android.support.constraint.ConstraintLayout>

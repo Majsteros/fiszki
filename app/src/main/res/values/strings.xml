@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">Fiszki</string>
+    <string name="default_title_error">Error occurred</string>
+    <string name="dialog_ok">OK</string>
+    <string name="error_unknown_occurred">Unknown error occurred</string>
+    <string name="action_add">Add</string>
+    <string name="success_directory_add">Directory was added successfully!</string>
+    <string name="error_directory_add">Directory with that name is already exists!</string>
+    <string name="dialog_add_directory">Set name of new directory</string>
+    <string name="dialog_set_name">Create</string>
+    <string name="dialog_cancel">Cancel</string>
+    <string name="dialog_default_name">Directory</string>
+    <string name="error_no_connection_message">You aren\'t connected with internet to do this.</string>
+    <string name="error_no_connection_refresh">No connection to load data</string>
+    <string name="error_null_string">The name can\'t be empty!</string>
+    <string name="counter_max_length">0/32</string>
+    <string name="error_no_data">Data is not available</string>
+    <string name="action_modify_name">Rename</string>
+    <string name="action_delete">Delete</string>
+    <string name="dialog_delete_question">Do you want delete this directory?</string>
+    <string name="dialog_delete_message">This operation will permanently delete this catalog along with all cards.</string>
+    <string name="dialog_delete">Delete</string>
+    <string name="dialog_rename">Rename</string>
+    <string name="success_directory_rename">Directory name was successfully renamed</string>
+</resources>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/margin_large_side"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/margin_large_side"
+        android:text="@string/dialog_add_directory"
+        android:textAppearance="@android:style/TextAppearance.DeviceDefault.DialogWindowTitle" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/input_directory_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toStartOf="@+id/text_characters_counter"
+            android:hint="@string/dialog_default_name"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            android:maxLength="32">
+
+            <requestFocus />
+        </EditText>
+
+        <TextView
+            android:id="@+id/text_characters_counter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:textAlignment="center"
+            android:text="@string/counter_max_length"
+            android:textAppearance="@style/TextAppearance.AppCompat.Small" />
+    </RelativeLayout>
+
+</LinearLayout>

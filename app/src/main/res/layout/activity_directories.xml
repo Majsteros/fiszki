@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="arkadiuszpalka.fiszki.ui.directories.DirectoriesActivity">
+
+    <include
+        android:id="@+id/toolbar_main"
+        layout="@layout/toolbar"
+        />
+
+    <TextView
+        android:id="@+id/text_no_connection"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/error_no_connection_refresh"
+        android:textAlignment="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_view_directories"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:clipToPadding="false"
+        android:paddingTop="@dimen/margin_large_side"
+        tools:context="arkadiuszpalka.fiszki.ui.directories.DirectoriesActivity">
+
+    </android.support.v7.widget.RecyclerView>
+
+</LinearLayout>
